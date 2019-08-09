@@ -84,9 +84,7 @@
     <Compile Include="MainForm_Control\LoginControl.Designer.cs">
       <DependentUpon>LoginControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
@@ -156,10 +154,10 @@
     <Compile Include="MenuUserControl\1.회계관리\6.업무용승용차 차량등록\업무용승용차차량등록.designer.cs">
       <DependentUpon>업무용승용차차량등록.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuUserControl\1.회계관리\8.기초정보관리\8-1.계정과목등록\계정과목등록.cs">
+    <Compile Include="MenuUserControl\1.회계관리\8.기초정보관리\계정과목등록.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MenuUserControl\1.회계관리\8.기초정보관리\8-1.계정과목등록\계정과목등록.designer.cs">
+    <Compile Include="MenuUserControl\1.회계관리\8.기초정보관리\계정과목등록.designer.cs">
       <DependentUpon>계정과목등록.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuUserControl\2.인사관리\5.기초정보관리\1-1.소득,세액공제 환경설정\소득세액공제환경설정.cs">
@@ -478,7 +476,7 @@
     <EmbeddedResource Include="MenuUserControl\1.회계관리\6.업무용승용차 차량등록\업무용승용차차량등록.resx">
       <DependentUpon>업무용승용차차량등록.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuUserControl\1.회계관리\8.기초정보관리\8-1.계정과목등록\계정과목등록.resx">
+    <EmbeddedResource Include="MenuUserControl\1.회계관리\8.기초정보관리\계정과목등록.resx">
       <DependentUpon>계정과목등록.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuUserControl\2.인사관리\5.기초정보관리\1-1.소득,세액공제 환경설정\소득세액공제환경설정.resx">

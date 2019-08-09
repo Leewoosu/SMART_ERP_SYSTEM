@@ -6,9 +6,14 @@ using System.Collections.Generic;
 using ClassLibrary;
 using System.Linq;
 using SMART_ERP_System.MenuUserControl;
+using ClassLibrary.EntityData;
 
 namespace SMART_ERP_System
 {
+    public static class loginMember
+    {
+        public static string Name { get; set; }
+    }
     public partial class MainForm : MetroForm
     {
         LoginForm loginForm;
@@ -19,15 +24,13 @@ namespace SMART_ERP_System
         {
             InitializeComponent();
             treeView.SetMenuItems(out menuItems);
-
-            UserControlList UserControlList = new UserControlList();
-            UserControlList.AddControls(out controls);
         }
 
         #region Event
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Text = loginForm.loginControl.txbEmployeeName.Text +
+            loginMember.Name = loginForm.loginControl.txbEmployeeName.Text;
+            this.Text = loginForm.loginControl.txbEmployeeName.Text +
                 "님 환영합니다.";
         }
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -38,6 +41,14 @@ namespace SMART_ERP_System
         {
             if (metroTabControl.TabCount != 0)
             {
+                foreach (UserControl userControl in controls)
+                {
+                    if (userControl.Name == metroTabControl.SelectedTab.Text)
+                    {
+
+                        userControl.Dispose();
+                    }
+                }
                 metroTabControl.TabPages.Remove(metroTabControl.SelectedTab);
             }
         }
@@ -49,27 +60,28 @@ namespace SMART_ERP_System
         }
         private void TreeView_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            string SerchName;
+            UserControlList UserControlList = new UserControlList();
+            UserControlList.AddControls(out controls);
 
-            if ((sender as TreeNode) != null)
-            {
-                TreeNode treeNode = (TreeNode)sender;
-                SerchName = treeNode.Text;
-            }
-            else
-            {
-                SerchName = treeView.SelectedNode.Text;
-            }
+            TreeView treeView = (TreeView)sender;
 
+            if (treeView.SelectedNode == null)
+                return;
+
+            string SerchName = treeView.SelectedNode.Text;
             int i = metroTabControl.TabPages.Count;
+
             if (i == 0)
             {
-                foreach (var control in controls)
+                foreach (UserControl control in controls)
                 {
-                    if (SerchName == control.Name)
+                    if (SerchName == control.Name)                   
                     {
-                        TabPage tabPage = new TabPage(Text = $"{control.Name}");
+                        TabPage tabPage = new TabPage();
+
+                        tabPage.Text = $"{control.Name}";
                         metroTabControl.TabPages.Add(tabPage);
+
                         control.Parent = tabPage;
                         control.Show();
                         control.Dock = DockStyle.Fill;
@@ -92,14 +104,15 @@ namespace SMART_ERP_System
                         return;
                     }
                 }
-
+                
                 metroTabControl.Visible = true;
 
                 foreach (var control in controls)
                 {
                     if (SerchName == control.Name)
                     {
-                        TabPage tabPage = new TabPage(Text = $"{control.Name}");
+                        TabPage tabPage = new TabPage();
+                        tabPage.Text = $"{control.Name}";
                         metroTabControl.TabPages.Add(tabPage);
 
                         control.Parent = tabPage;
@@ -115,6 +128,7 @@ namespace SMART_ERP_System
         private void BtnMenuSearch_Click(object sender, EventArgs e)
         {
             TreeNode findNode = SearchNode(txbMenuSearch.Text, treeView.TopNode);
+            listBox.Visible = false;
             findNode.ExpandAll();
         }
         private void BtnInfo_Click(object sender, EventArgs e)
@@ -131,7 +145,7 @@ namespace SMART_ERP_System
             {
                 foreach (var item in menuItems)
                 {
-                    if (item.Title.Contains(txbMenuSearch.Text) == true)
+                    if (item.Title.ToLower().Contains(txbMenuSearch.Text.ToLower()) == true)
                     {
                         listBox.Items.Add(item.Title);
                     }
@@ -146,17 +160,22 @@ namespace SMART_ERP_System
         }
         private void ListBox_DoubleClick(object sender, EventArgs e)
         {
+            if (listBox.SelectedItem == null)
+                return;
+
             listBox.Visible = false;
             string keyValue = listBox.SelectedItem.ToString();
             TreeNode node = SearchNode(keyValue, treeView.Nodes[0]);
-            TreeView_NodeMouseDoubleClick(node, null);
+
+            treeView.SelectedNode = node;
+            TreeView_NodeMouseDoubleClick(treeView, null);
         }
         #endregion
 
         public void RecieveLoginForm(LoginForm loginForm)
         {
             this.loginForm = loginForm;
-        }        
+        }
 
         public TreeNode SearchNode(string SearchText, TreeNode StartNode)
         {

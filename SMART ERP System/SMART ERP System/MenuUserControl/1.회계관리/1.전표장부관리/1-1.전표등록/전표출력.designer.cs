@@ -116,7 +116,6 @@
             this.groupBox2.Size = new System.Drawing.Size(1025, 80);
             this.groupBox2.TabIndex = 137;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.GroupBox2_Enter);
             // 
             // dateTimePicker3
             // 
@@ -314,7 +313,6 @@
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(1025, 519);
             this.dataGridView1.TabIndex = 132;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // Column1
             // 

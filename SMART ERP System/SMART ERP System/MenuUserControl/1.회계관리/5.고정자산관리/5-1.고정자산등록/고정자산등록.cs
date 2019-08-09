@@ -21,7 +21,6 @@ namespace SMART_ERP_System.MenuUserControl
 
         public void Load_DepreciationMethod()
         {
-            상각방법BindingSource.DataSource = DB.상각방법.GetAll();
             cbbDepreciationMethod.SelectedIndex = -1;
         }
     }
