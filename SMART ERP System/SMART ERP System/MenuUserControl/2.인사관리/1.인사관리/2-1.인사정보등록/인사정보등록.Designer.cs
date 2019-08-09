@@ -60,7 +60,7 @@
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
             this.splitContainer8 = new System.Windows.Forms.SplitContainer();
             this.label22 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn사진등록 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -246,6 +246,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.textBox18 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
@@ -609,6 +610,7 @@
             // 
             // splitContainer6.Panel2
             // 
+            this.splitContainer6.Panel2.Controls.Add(this.textBox18);
             this.splitContainer6.Panel2.Controls.Add(this.textBox6);
             this.splitContainer6.Panel2.Controls.Add(this.textBox5);
             this.splitContainer6.Panel2.Controls.Add(this.dateTimePicker1);
@@ -645,7 +647,7 @@
             // 
             // splitContainer8.Panel2
             // 
-            this.splitContainer8.Panel2.Controls.Add(this.button2);
+            this.splitContainer8.Panel2.Controls.Add(this.btn사진등록);
             this.splitContainer8.Panel2.Controls.Add(this.pictureBox2);
             this.splitContainer8.Size = new System.Drawing.Size(247, 263);
             this.splitContainer8.SplitterDistance = 26;
@@ -659,14 +661,14 @@
             this.label22.TabIndex = 7;
             this.label22.Text = "개인정보";
             // 
-            // button2
+            // btn사진등록
             // 
-            this.button2.Location = new System.Drawing.Point(9, 233);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 23);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "사진등록";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn사진등록.Location = new System.Drawing.Point(9, 233);
+            this.btn사진등록.Name = "btn사진등록";
+            this.btn사진등록.Size = new System.Drawing.Size(183, 23);
+            this.btn사진등록.TabIndex = 29;
+            this.btn사진등록.Text = "사진등록";
+            this.btn사진등록.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -1458,7 +1460,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(610, 589);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "건강보험";
+            this.tabPage3.Text = "급여정보";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // splitContainer9
@@ -2512,6 +2514,14 @@
             this.button10.Text = "조회기준";
             this.button10.UseVisualStyleBackColor = true;
             // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(119, 224);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(145, 20);
+            this.textBox18.TabIndex = 40;
+            // 
             // 인사정보등록
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -2738,7 +2748,7 @@
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.SplitContainer splitContainer8;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button btn사진등록;
 		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.SplitContainer splitContainer9;
@@ -2810,5 +2820,6 @@
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.Button button8;
 		private System.Windows.Forms.Button button10;
-	}
+        private System.Windows.Forms.TextBox textBox18;
+    }
 }

@@ -16,15 +16,5 @@ namespace SMART_ERP_System.MenuUserControl
         {
             InitializeComponent();
         }
-
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void GroupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

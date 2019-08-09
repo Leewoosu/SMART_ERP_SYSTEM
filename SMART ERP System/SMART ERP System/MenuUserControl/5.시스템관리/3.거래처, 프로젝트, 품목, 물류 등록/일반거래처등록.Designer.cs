@@ -31,14 +31,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -46,8 +38,6 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
@@ -62,8 +52,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label35 = new System.Windows.Forms.Label();
@@ -139,14 +127,6 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage1.Controls.Add(this.comboBox6);
-            this.tabPage1.Controls.Add(this.label19);
-            this.tabPage1.Controls.Add(this.comboBox5);
-            this.tabPage1.Controls.Add(this.label18);
-            this.tabPage1.Controls.Add(this.comboBox4);
-            this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.comboBox3);
-            this.tabPage1.Controls.Add(this.label16);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.textBox7);
             this.tabPage1.Controls.Add(this.label10);
@@ -154,8 +134,6 @@
             this.tabPage1.Controls.Add(this.textBox11);
             this.tabPage1.Controls.Add(this.textBox12);
             this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.comboBox1);
-            this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.dateTimePicker5);
             this.tabPage1.Controls.Add(this.label15);
@@ -170,90 +148,12 @@
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.textBox3);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.textBox10);
-            this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(609, 549);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "기본등록사항";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.Font = new System.Drawing.Font("Gulim", 10F);
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(126, 341);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(226, 21);
-            this.comboBox6.TabIndex = 187;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label19.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(43, 344);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(86, 22);
-            this.label19.TabIndex = 186;
-            this.label19.Text = "거래처등급";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Font = new System.Drawing.Font("Gulim", 10F);
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(126, 369);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(226, 21);
-            this.comboBox5.TabIndex = 185;
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label18.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(42, 372);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(83, 22);
-            this.label18.TabIndex = 184;
-            this.label18.Text = "수금거래처";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Font = new System.Drawing.Font("Gulim", 10F);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(126, 397);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(226, 21);
-            this.comboBox4.TabIndex = 183;
-            // 
-            // label17
-            // 
-            this.label17.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label17.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.label17.Location = new System.Drawing.Point(86, 400);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 22);
-            this.label17.TabIndex = 182;
-            this.label17.Text = "지역";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Gulim", 10F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(126, 313);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(226, 21);
-            this.comboBox3.TabIndex = 181;
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label16.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(43, 316);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(89, 22);
-            this.label16.TabIndex = 180;
-            this.label16.Text = "거래처분류";
             // 
             // label7
             // 
@@ -313,25 +213,6 @@
             this.label13.TabIndex = 173;
             this.label13.Text = "사업장주소";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Gulim", 10F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(126, 285);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(226, 21);
-            this.comboBox1.TabIndex = 171;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(55, 288);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 22);
-            this.label3.TabIndex = 170;
-            this.label3.Text = "프로젝트";
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
@@ -344,7 +225,7 @@
             // 
             // dateTimePicker5
             // 
-            this.dateTimePicker5.Location = new System.Drawing.Point(126, 465);
+            this.dateTimePicker5.Location = new System.Drawing.Point(124, 304);
             this.dateTimePicker5.Name = "dateTimePicker5";
             this.dateTimePicker5.Size = new System.Drawing.Size(226, 21);
             this.dateTimePicker5.TabIndex = 168;
@@ -353,7 +234,7 @@
             // 
             this.label15.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label15.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(42, 467);
+            this.label15.Location = new System.Drawing.Point(40, 306);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(91, 22);
             this.label15.TabIndex = 167;
@@ -361,7 +242,7 @@
             // 
             // dateTimePicker4
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(126, 438);
+            this.dateTimePicker4.Location = new System.Drawing.Point(124, 277);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(226, 21);
             this.dateTimePicker4.TabIndex = 166;
@@ -370,7 +251,7 @@
             // 
             this.label14.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label14.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(42, 440);
+            this.label14.Location = new System.Drawing.Point(40, 279);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(91, 22);
             this.label14.TabIndex = 165;
@@ -451,23 +332,6 @@
             this.label4.TabIndex = 153;
             this.label4.Text = "사업자등록번호";
             // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(127, 26);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(225, 21);
-            this.textBox10.TabIndex = 152;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(41, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 22);
-            this.label5.TabIndex = 151;
-            this.label5.Text = "거래처약칭";
-            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -504,7 +368,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(502, 549);
+            this.tabPage2.Size = new System.Drawing.Size(609, 549);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "거래등록사항";
             // 
@@ -892,8 +756,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.Label label15;
@@ -908,16 +770,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label10;

@@ -345,9 +345,9 @@
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(27, 109);
+            this.label6.Location = new System.Drawing.Point(11, 108);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 22);
+            this.label6.Size = new System.Drawing.Size(113, 22);
             this.label6.TabIndex = 155;
             this.label6.Text = "사업자등록번호";
             // 

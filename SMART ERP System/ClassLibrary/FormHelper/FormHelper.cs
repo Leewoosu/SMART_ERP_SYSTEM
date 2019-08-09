@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary.EntityData;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -43,7 +44,7 @@ namespace ClassLibrary.FormHelper
             }
         }
 
-        public static void SetMenuItems(this TreeView treeView, 
+        public static void SetMenuItemsByAccount(this TreeView treeView, 
             out List<계정과목등록> MenuItems)
         {
             using (ERPEntities entity = new ERPEntities())
